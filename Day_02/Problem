@@ -1,0 +1,16 @@
+Problem on Array Data Structure in Java:
+
+Pascal's Triangle II:
+
+Given a non-negative index 'rowIndex' , return the 'rowIndex'-th row of Pascal's triangle.
+
+Pascal's trainagle is a traingular array of binomial coefficients. The k-th row of Pascal's triangle is constructed as follows:
+1. The first and last elements in the row are always 1.
+2. Each of the remaining elements is the sum of the numbers directly above-and-theleft and above-and-to-the-right.
+
+Approach:
+1. Use a single list to represent the current row.
+2. Build the row by updating each element in reverse order.
+3. Each element is the sum of the current element and the previous element in the row.
+
+

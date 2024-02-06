@@ -1,0 +1,11 @@
+Problem on Array Data Structure in Java:
+
+Next Permutation
+
+Given an array of integers, we need to find the next lexicographically greater permutation of the numbers. If no such permutation exists, we should rearrange the numbers to the lowest possible order(i.e., sorted in ascending order).
+
+Approach:
+1. Start from the rightmost element and find the first pair of adjacent element( a[i], a[i+1]) such     that 'a[i] < a[i+1]'. The element 'a[i]' is the first element to be swapped.
+2. Find the smallest element to the right of 'a[i]' but greater than 'a[i]'. Let's call this element 'a[j]'.
+3. Swap 'a[i]' with 'a[j]'.
+4. Reverse the subarray to the right of 'a[i]', i.e., reverse the elements from 'a[i+1]' to the end.
